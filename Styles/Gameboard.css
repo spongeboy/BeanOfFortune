@@ -1,0 +1,113 @@
+﻿
+html,body{
+      margin:0;
+      padding:0;
+      height:100%;
+      border:none;
+      display: block;
+}
+	
+
+#gameboard
+{
+    color: Blue;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+        
+       
+}
+
+#gameboard.stopped #centre
+{
+    border: 0px solid pink;
+    background-color: orange;
+    color: purple;
+}
+
+#gameboard > div
+{
+    border: 0px solid #999999;
+    width: 20%;
+    height: 20%;
+    vertical-align:middle;
+    float: left;
+    color: Orange;
+    background-color: Black;
+    display: table-cell;
+}
+
+#gameboard > div > img
+{
+    position: relative;
+    text-align: center;
+    width: 20%;
+    vertical-align: middle;
+    top: 20%;
+}
+
+#gameboard > #square01X
+{
+    /*background: #333 url('../images/bean_red.png') no-repeat fixed center;*/
+    background-image: url('../images/bean_red.png');
+    background-repeat: no-repeat;
+    background-attachment:inherit;
+    background-position:center;
+}
+
+#square07, #square09, #square11
+{
+    float:right !important;
+}
+
+#square08, #square10, #square12
+{
+    clear:left;   
+}
+
+.innerSquare
+{
+    position: relative;
+    top: 40%;
+    margin-bottom: -25%;
+}
+
+#gameboard #centre
+{
+    color: Orange;
+    border: none;
+    width: 60%;
+    height: 60%;
+    top: 20%;
+    left: 20%;
+    position: absolute;
+    background-color: Black;
+}
+
+#gameboard #centreStandby 
+{
+    display: none;
+}
+
+#gameboard .selected
+{
+    color: purple;
+    background-color:orange;
+}
+
+#gameboard.stopped .selected
+{
+    color: Purple;
+    background-color:Lime;
+}
+
+#gameboard .highlighted
+{
+    color: orange;
+    background-color:purple;
+}
+
+#gameboard > div .hidden_centre 
+{
+    display: none;
+}
